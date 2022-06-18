@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "43f1f80f-3fd6-4060-8f2e-7ce76f9c4166",
+		"name": "RoadAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18397357"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "Save Road",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"11\",\r\n    \"name\": \"Thai Ha 3\",\r\n    \"district_id\": \"001\",\r\n    \"founding\":\"2002-05-23\",\r\n    \"description\":\"beautiful\",\r\n    \"status\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7777/api/v1/road",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"api",
+								"v1",
+								"road"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Road",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Save District",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"005\",\r\n    \"name\": \"My Dinh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7777/api/v1/district",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"api",
+								"v1",
+								"district"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All District",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
